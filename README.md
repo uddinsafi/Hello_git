@@ -1,4 +1,5 @@
-# Hello_git
+# Next Date Generation using Python
+
 def generate_next_date(day,month,year):
     if(month==4 or month==6 or month==9 or month==11):
         if(day<=29):

@@ -1,0 +1,45 @@
+"""import random
+while True:
+    s=input("Rock Paper or Scissor:")
+    c=random.randint(1,3)
+    if (s=="Rock" and c==1) or (s=="Paper" and c==2) or (s=="Scissor" and c==3):
+        print("It's a draw",c)
+    elif (s=="Rock" and c==2):
+        print("You lose")
+    elif (s=="Paper" and c==3):
+        print("You lose",c)
+    elif (s=="Scissor" and c==1):
+        print("You lose",c)
+    else:
+        print("You Won",c)"""
+
+import random
+i=1
+countw=0
+countl=0
+countd=0
+while i<=10:
+    rps ={1:'Rock',2:'Paper',3:'Scissor'}
+    s=input("Rock Paper or Scissor:")
+    c=random.randint(1,3)
+    if (s=="Rock" and c==1) or (s=="Paper" and c==2) or (s=="Scissor" and c==3):
+        print("It's a draw computer's choice is:",rps[c])
+        countd=countd+1
+    elif (s=="Rock" and c==2):
+        print("You lose computer's choice is:",rps[c])
+        countl=countl+1
+    elif (s=="Paper" and c==3):
+        print("You lose computer's choice is:",rps[c])
+        countl=countl+1
+    elif (s=="Scissor" and c==1):
+        print("You lose computer's choice is:",rps[c])
+        countl=countl+1
+    else:
+        print("You Won computer's choice is:",rps[c])
+        countw=countw+1
+    print("\n")
+    i=i+1
+print("You Won ",countw," times")
+print("You lose ",countl," times")
+print("You draw ",countd," times")
+
